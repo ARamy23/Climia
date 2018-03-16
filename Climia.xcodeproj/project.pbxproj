@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F2B004A202A0DFE00046ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B0049202A0DFE00046ABB /* AppDelegate.swift */; };
+		5F2B004C202A0DFE00046ABB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B004B202A0DFE00046ABB /* WeatherViewController.swift */; };
+		5F2B0051202A0DFE00046ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B0050202A0DFE00046ABB /* Assets.xcassets */; };
+		5F2B0054202A0DFE00046ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B0052202A0DFE00046ABB /* LaunchScreen.storyboard */; };
+		5F484969202AEC2F00DDECAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F484968202AEC2E00DDECAB /* Main.storyboard */; };
+		5F48496E202AEDD100DDECAB /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48496D202AEDD100DDECAB /* ChangeCityViewController.swift */; };
+		5F484970202AEE5000DDECAB /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48496F202AEE5000DDECAB /* WeatherDataModel.swift */; };
+		95C460656E947C9A46AFEB9A /* Pods_Climia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B521D59E39E453E7E53184A /* Pods_Climia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C13FF37C479575B30FAE013 /* Pods-Climia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Climia/Pods-Climia.debug.xcconfig"; sourceTree = "<group>"; };
+		5F2B0046202A0DFE00046ABB /* Climia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2B0049202A0DFE00046ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F2B004B202A0DFE00046ABB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		5F2B0050202A0DFE00046ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F2B0053202A0DFE00046ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F2B0055202A0DFE00046ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F484968202AEC2E00DDECAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5F48496D202AEDD100DDECAB /* ChangeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
+		5F48496F202AEE5000DDECAB /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		8B521D59E39E453E7E53184A /* Pods_Climia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6178414BE65048EF0FCB904 /* Pods-Climia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Climia/Pods-Climia.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F2B0043202A0DFE00046ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C460656E947C9A46AFEB9A /* Pods_Climia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F2B003D202A0DFE00046ABB = {
+			isa = PBXGroup;
+			children = (
+				5F2B0048202A0DFE00046ABB /* Climia */,
+				5F2B0047202A0DFE00046ABB /* Products */,
+				C751B3F0FA1089667D256427 /* Pods */,
+				ADCC311FAE3FF3BE82B6562B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F2B0047202A0DFE00046ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B0046202A0DFE00046ABB /* Climia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F2B0048202A0DFE00046ABB /* Climia */ = {
+			isa = PBXGroup;
+			children = (
+				5F48496C202AECD200DDECAB /* Controller */,
+				5F48496B202AECCB00DDECAB /* Model */,
+				5F48496A202AECB300DDECAB /* View */,
+				5F2B0050202A0DFE00046ABB /* Assets.xcassets */,
+				5F2B0052202A0DFE00046ABB /* LaunchScreen.storyboard */,
+				5F2B0055202A0DFE00046ABB /* Info.plist */,
+			);
+			path = Climia;
+			sourceTree = "<group>";
+		};
+		5F48496A202AECB300DDECAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F484968202AEC2E00DDECAB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F48496B202AECCB00DDECAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F48496F202AEE5000DDECAB /* WeatherDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F48496C202AECD200DDECAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B004B202A0DFE00046ABB /* WeatherViewController.swift */,
+				5F48496D202AEDD100DDECAB /* ChangeCityViewController.swift */,
+				5F2B0049202A0DFE00046ABB /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ADCC311FAE3FF3BE82B6562B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B521D59E39E453E7E53184A /* Pods_Climia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C751B3F0FA1089667D256427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C13FF37C479575B30FAE013 /* Pods-Climia.debug.xcconfig */,
+				B6178414BE65048EF0FCB904 /* Pods-Climia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F2B0045202A0DFE00046ABB /* Climia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F2B0058202A0DFE00046ABB /* Build configuration list for PBXNativeTarget "Climia" */;
+			buildPhases = (
+				021732305C7082B2C87F807F /* [CP] Check Pods Manifest.lock */,
+				5F2B0042202A0DFE00046ABB /* Sources */,
+				5F2B0043202A0DFE00046ABB /* Frameworks */,
+				5F2B0044202A0DFE00046ABB /* Resources */,
+				1E12B83FFA10FD55E47B3032 /* [CP] Embed Pods Frameworks */,
+				B8E4C5D0D87C441AE78AF671 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Climia;
+			productName = Climia;
+			productReference = 5F2B0046202A0DFE00046ABB /* Climia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F2B003E202A0DFE00046ABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ahmed Ramy";
+				TargetAttributes = {
+					5F2B0045202A0DFE00046ABB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F2B0041202A0DFE00046ABB /* Build configuration list for PBXProject "Climia" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F2B003D202A0DFE00046ABB;
+			productRefGroup = 5F2B0047202A0DFE00046ABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F2B0045202A0DFE00046ABB /* Climia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F2B0044202A0DFE00046ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F484969202AEC2F00DDECAB /* Main.storyboard in Resources */,
+				5F2B0054202A0DFE00046ABB /* LaunchScreen.storyboard in Resources */,
+				5F2B0051202A0DFE00046ABB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		021732305C7082B2C87F807F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Climia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E12B83FFA10FD55E47B3032 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Climia/Pods-Climia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Climia/Pods-Climia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E4C5D0D87C441AE78AF671 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Climia/Pods-Climia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F2B0042202A0DFE00046ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F484970202AEE5000DDECAB /* WeatherDataModel.swift in Sources */,
+				5F2B004C202A0DFE00046ABB /* WeatherViewController.swift in Sources */,
+				5F2B004A202A0DFE00046ABB /* AppDelegate.swift in Sources */,
+				5F48496E202AEDD100DDECAB /* ChangeCityViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F2B0052202A0DFE00046ABB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F2B0053202A0DFE00046ABB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F2B0056202A0DFE00046ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F2B0057202A0DFE00046ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F2B0059202A0DFE00046ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C13FF37C479575B30FAE013 /* Pods-Climia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = Climia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShaDiLiX.Climia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F2B005A202A0DFE00046ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6178414BE65048EF0FCB904 /* Pods-Climia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = Climia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShaDiLiX.Climia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F2B0041202A0DFE00046ABB /* Build configuration list for PBXProject "Climia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2B0056202A0DFE00046ABB /* Debug */,
+				5F2B0057202A0DFE00046ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F2B0058202A0DFE00046ABB /* Build configuration list for PBXNativeTarget "Climia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F2B0059202A0DFE00046ABB /* Debug */,
+				5F2B005A202A0DFE00046ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F2B003E202A0DFE00046ABB /* Project object */;
+}
