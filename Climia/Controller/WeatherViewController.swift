@@ -22,7 +22,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate , Chang
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
     
-    //MARK : Pre-linked IBOutlets
+    //MARK : linked IBOutlets
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -92,7 +92,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate , Chang
     /***********************************************/
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations[locations.count-1] //why is this is a let ? not a var ? shouldnt locations be a variant ?
+        let location = locations[locations.count-1] 
         if location.horizontalAccuracy > 0
         {
             locationManager.stopUpdatingLocation()
