@@ -11,14 +11,25 @@ import CoreLocation
 import Alamofire
 import SwiftyJSON
 
+/*
+ 1. Has Direct access to App Secrets and URLs
+ 2. Calls Location Manager directly and does logic based on the location
+ 3. Does networking and parses the network responses
+ 4. Navigates to other views
+ 5. too many side effects and violation of single responsibility principle
+ */
 class WeatherViewController: UIViewController, CLLocationManagerDelegate , ChangeCityDelegate
 {
 
     //MARK: Constants
+    
+    // Refactoring mark: Should move to xcconfig file
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
     let APP_ID = "ce30986ae5a18800b94e827061fb63f5"
     
-    //MARK : Declare instance variables
+    //MARK: Declare instance variables
+    
+    // Refactoring mark: location should be moved to an external protocol and be called from behind that protocol
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
     
@@ -27,6 +38,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate , Chang
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     
+    // Refactoring mark: ViewDidLoad logic should be moved to presentation layer
     override func viewDidLoad() {
         super.viewDidLoad()
         //MARK : locationManager settings
@@ -37,6 +49,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate , Chang
         
     }
     
+    // Refactoring mark: Networking be externalized
     //MARK: - Networking
     /***********************************************/
     func getWeatherData(url: String , parameters: [String: String])
@@ -59,6 +72,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate , Chang
     }
     
     
+    // Refactoring mark: Parsing should be the responsibility of the network layer
     //MARK: - JSON Parsing
     /***********************************************/
     func updateWeatherData(json: JSON)
@@ -124,6 +138,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate , Chang
         
     }
     
+    // Refactoring mark: Externalize to a router
     //MARK: - Navigation
     /******************************************/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
