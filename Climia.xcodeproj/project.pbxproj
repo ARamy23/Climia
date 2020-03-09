@@ -65,40 +65,12 @@
 		5F2B0048202A0DFE00046ABB /* Climia */ = {
 			isa = PBXGroup;
 			children = (
-				5F48496C202AECD200DDECAB /* Controller */,
-				5F48496B202AECCB00DDECAB /* Model */,
-				5F48496A202AECB300DDECAB /* View */,
-				5F2B0050202A0DFE00046ABB /* Assets.xcassets */,
-				5F2B0052202A0DFE00046ABB /* LaunchScreen.storyboard */,
-				5F2B0055202A0DFE00046ABB /* Info.plist */,
+				B80AA2072416B5340003847F /* Core */,
+				B80AA2032416B4D10003847F /* Presentation */,
+				B80AA2062416B5220003847F /* Business */,
+				B80AA2082416B5460003847F /* Entity */,
 			);
 			path = Climia;
-			sourceTree = "<group>";
-		};
-		5F48496A202AECB300DDECAB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5F484968202AEC2E00DDECAB /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5F48496B202AECCB00DDECAB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5F48496F202AEE5000DDECAB /* WeatherDataModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5F48496C202AECD200DDECAB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				5F2B004B202A0DFE00046ABB /* WeatherViewController.swift */,
-				5F48496D202AEDD100DDECAB /* ChangeCityViewController.swift */,
-				5F2B0049202A0DFE00046ABB /* AppDelegate.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		ADCC311FAE3FF3BE82B6562B /* Frameworks */ = {
@@ -107,6 +79,58 @@
 				8B521D59E39E453E7E53184A /* Pods_Climia.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B80AA2032416B4D10003847F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5F484968202AEC2E00DDECAB /* Main.storyboard */,
+				B80AA2042416B4EF0003847F /* Home */,
+				B80AA2052416B4FE0003847F /* Change City */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B80AA2042416B4EF0003847F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B004B202A0DFE00046ABB /* WeatherViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B80AA2052416B4FE0003847F /* Change City */ = {
+			isa = PBXGroup;
+			children = (
+				5F48496D202AEDD100DDECAB /* ChangeCityViewController.swift */,
+			);
+			path = "Change City";
+			sourceTree = "<group>";
+		};
+		B80AA2062416B5220003847F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		B80AA2072416B5340003847F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B0049202A0DFE00046ABB /* AppDelegate.swift */,
+				5F2B0050202A0DFE00046ABB /* Assets.xcassets */,
+				5F2B0052202A0DFE00046ABB /* LaunchScreen.storyboard */,
+				5F2B0055202A0DFE00046ABB /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B80AA2082416B5460003847F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5F48496F202AEE5000DDECAB /* WeatherDataModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		C751B3F0FA1089667D256427 /* Pods */ = {
